@@ -1,0 +1,1 @@
+ALTER TABLE sandwich ADD COLUMN product_ref VARCHAR;

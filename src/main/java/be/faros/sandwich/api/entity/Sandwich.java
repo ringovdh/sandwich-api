@@ -14,6 +14,8 @@ public class Sandwich extends BaseEntity {
 
     private String name;
 
+    private String productRef;
+
     private double price;
 
     @ManyToMany
@@ -28,6 +30,14 @@ public class Sandwich extends BaseEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getProductRef() {
+        return productRef;
+    }
+
+    public void setProductRef(String productRef) {
+        this.productRef = productRef;
     }
 
     public double getPrice() {

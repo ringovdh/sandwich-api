@@ -10,6 +10,7 @@ public class SandwichMapper {
         return new SandwichDTO(
                 sandwich.getId(),
                 sandwich.getName(),
+                sandwich.getProductRef(),
                 sandwich.getIngredients().stream()
                         .map(IngredientMapper::mapIngredientToDTO).toList(),
                 sandwich.getPrice());
